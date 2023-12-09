@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="inscripcion_model_view" model="ir.ui.view">
+            <field name="name">Lista inscripciones</field>
+            <field name="model">inscripcion_model</field>
+            <field name="arch" type="xml">
+                <tree string="Lista">
+                    <field name="inscription_date" />
+                    <field name="alumno_id" />
+                    <field name="programa_id" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="inscripcion_model_action" model="ir.actions.act_window">
+            <field name="name">Inscripciones</field>
+            <field name="res_model">inscripcion_model</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    </data>
+</odoo>

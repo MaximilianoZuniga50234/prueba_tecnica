@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="pais_model_view" model="ir.ui.view">
+            <field name="name">Paises</field>
+            <field name="model">pais_model</field>
+            <field name="arch" type="xml">
+                <tree string="Lista">
+                    <field name="id" width="50" />
+                    <field name="name" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="pais_model_action" model="ir.actions.act_window">
+            <field name="name">Paises</field>
+            <field name="res_model">pais_model</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    </data>
+</odoo>

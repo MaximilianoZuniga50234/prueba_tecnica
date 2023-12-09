@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem id="prueba_menu_root" name="Prueba" sequence="1">
+            <menuitem id="alumno_model_menu_action" action="alumno_model_action" name="Alumnos" />
+            <menuitem id="programa_model_menu_action" action="programa_model_action"
+                name="Programas" />
+            <menuitem id="inscripcion_model_menu_action" action="inscripcion_model_action"
+                name="Inscripciones" />
+            <menuitem id="pais_model_menu_action" action="pais_model_action" name="Paises" />
+        </menuitem>
+    </data>
+</odoo>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="alumno_model_view" model="ir.ui.view">
+            <field name="name">Alumnos</field>
+            <field name="model">alumno_model</field>
+            <field name="arch" type="xml">
+                <tree string="Lista">
+                    <field name="id" width="100" />
+                    <field name="name" />
+                    <field name="last_name" />
+                    <field name="email" />
+                    <field name="country_id" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="alumno_model_action" model="ir.actions.act_window">
+            <field name="name">Alumnos</field>
+            <field name="res_model">alumno_model</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    </data>
+</odoo>
